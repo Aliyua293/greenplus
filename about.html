@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Plus</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #DFF0E2;
+        }
+         h1{
+            font-size: 35px;
+            font-family: serif;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            font-family: serif;
+            font-weight: normal;
+            text-align: center;
+            
+        }
+        h3{
+            font-size: 30px;
+        }
+
+      
+
+.nav {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0 40px 0 40px;
+    text-align: right;
+    height: 100px;
+    background-color: #45a049;
+    
+
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 40px;
+
+}
+
+.nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+
+.nav img{
+    float: left;
+    margin-left: 20px;
+    padding: 5px;
+
+}
+.h-stn{
+        height: 350px;
+        display: flex;
+        position: relative;
+        margin-left: 0;
+        }
+
+.h-img{
+    width: 50%;
+    padding-left: 2;
+}
+
+.h-img  img{
+    width: 80%;
+    height: 80%;
+    padding-top: 50px;
+
+}
+.h-text{
+    width: 50%;
+    
+}
+.h-text button{
+    margin-right: 30px;
+}
+
+.h-stn h1{
+    padding: 0px 10px 0px 30px;
+    /* text-align: justify; */
+    font-size: 80px;
+    color: green;
+    margin-bottom: 5px;
+    
+
+}
+.h-text button{
+    background-color: rgba(17, 129, 17, 0.575);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    display: inline block;
+    font-size: 18px;
+    margin: 4px 2px 0px 30px ;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.h-text button a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+        #stn{
+            height: 350px;
+            position: relative;
+            display: flex;
+            margin: 20px 40px 20px 40px;
+            padding:  20px 80px 20px 80px;
+            /* border: 1px solid black; */
+        }
+        .abt{
+            width: 40%;
+            margin-right: 40px;
+            padding: 0;
+            
+            
+            
+        }
+        .abt-1{
+            width: 50%;
+            margin: ;
+
+            
+            
+        }
+        .abt img{
+            width: 100%;
+            height: 100%;
+        
+        }
+        .abt .desc{
+            text-align: justify;
+            margin-top: 0;
+        }
+
+        #t-stn{
+            height: 350px;
+            position: relative;
+            display: flex;
+            margin: 20px 40px 20px 130px;
+            padding:  20px 30px 20px 30px;
+           
+        }
+
+        .team{
+            margin: 10px;
+            padding: 10px 0px 0px 10px;
+            text-align: center;
+            border: 1px solid green;
+            border-radius: 25px;
+            height: 350px;
+        }
+           
+        .team img{
+            width: 90%;
+            height: 70%;
+            border-radius: 25px;
+            
+        }
+        .team  h2{
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+                /* services section */
+        #s-stn{
+            height:350px;
+            position: relative;
+            display: flex;
+            margin: 20px 40px 0 75px;
+            padding:  20px 100px 20px 100px;
+        }
+        .srv{
+            margin: 10px;
+            border: 1px solid green;
+            padding: 30px 0px 20px 0px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .srv img{
+            width: 80%;
+            height: 80%;
+            border-radius: 25px;
+        }
+        .srv  h2{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #c-stn{
+            height: 350px;
+            position: relative;
+            display: flex;
+            margin: 20px;
+            padding:  20px 100px 20px 100px;
+        }
+        .ctc-1{
+            text-align: left;
+            padding-top: 10px;
+            width: 50%;
+        }
+        .ctc-p{
+            text-align: left;
+        }
+        .ctc{
+            margin: 20px;
+            width: 40%;
+            height: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 20px;
+            border-radius: 25px;
+
+
+        }
+        .ctc input[type=text], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        }
+         input[type=submit] {
+        width: 100%;
+         background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: rgb(87, 247, 87);
+        }
+
+        footer{
+            margin-top: 70px;
+            height: 60px;
+            background-color: #45a049;
+        }
+        footer p{
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul l class="nav">
+            <img src="img/bg.png" alt="" width="15%">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> 
+    <header class="h-stn">
+       
+        <div class="h-text">
+            <h1> GREEN PLUS </h1>
+            <button><a href="#">Contact Us</a></button>
+            <button><a href="#">Our Gallery</a></button>
+        </div>   
+        <div class="h-img">
+                <img src="img/bg.png">
+        </div>
+    
+      </header>
+
+            <!-- about us section -->
+    <h1 id="about">About Us</h1>
+    <p>Lorem ipsum dolor sit amet consecvoluptate iste atque et rem obcaecati molestiae recusandae deleniti molestias.</p>
+    <section id="stn">
+        <div class="abt">
+            <img src="img/10.jpeg" alt="" >
+        </div>
+        <div class="abt-1">
+            <h3>We Are Leading International Company</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugit est pariatur consequuntur provident error. Quaerat aliquid delectus nobis 
+                provident maiores perspiciatis aut iusto in voluptatum, dicta dolores expedita? Reprehenderit! 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti ipsum enim repellat voluptatum provident amet quaerat a
+                utem hic cum. Mollitia in praesentium sapiente soluta perspiciatis recusandae molestias at natus.
+            </p>
+            <ul>
+                <li>  utem hic cum. Mollitia in praesentium sapiente soluta</li>
+                <li>  utem hic cum. Mollitia in praesentium sapiente soluta</li>
+                <li>  utem hic cum. Mollitia in praesentium sapiente soluta</li>
+
+
+            </ul>
+        </div>
+
+    </section>
+    <br><br><br>
+            <!-- our team section -->
+    <h1 style="margin-top: 30px;">Our Expert Team</h1>
+    <section id="t-stn">
+        <div class="team">
+            <img src="img/team-01.png" alt="">
+            <h2>HAFIZ M GARZALI</h2>
+            <p>CEO</p>
+        </div>
+        <div class="team">
+            <img src="img/team-02.png" alt="">
+            <h2>Arc.MUSTAPHA ABDULMUNFA</h2>
+            <P>Consulting Manager </P>
+        </div>
+        <div class="team">
+            <img src="img/team-03.png" alt="">
+            <h2>Arc.HASSAN IDRIS ALI</h2>
+            <P> Consulting Partner</P>
+        </div>
+        <div class="team">
+            <img src="img/team-04.png" alt="">
+            <h2>BILYAMINU SABO</h2>
+            <P>Marketing Manager</P>
+        </div>
+
+    </section>
+
+        <h1 id="services">Our Services</h1>
+        <p>Lorem ipsum dolor sit amet consecvoluptate iste atque et rem obcaecati molestiae recusandae deleniti molestias.</p>
+        <section id="s-stn">
+            <div class="srv">
+                <img src="img/11.jpeg" alt="">
+                <h2>Building Constructions</h2>
+            </div>
+            <div class="srv">
+                <img src="img/10.jpeg" alt="">
+                <h2>Architectural Design</h2>
+            </div>
+            <div class="srv">
+                <img src="img/13.jpeg" alt="">
+                <h2>Consultancy</h2>
+            </div>
+    
+        </section>
+
+
+        <h1 id="contact">Contact Us</h1>
+    <p>Lorem ipsum dolor sit amet e recusandae deleniti molestias.</p>
+    <section id="c-stn">
+        <div class="ctc-1">
+            <h2 class="ctc-p"> <span >Call Us</span> </h2>
+            <p class="ctc-1"> 0815870768 <br> 08129896813</p>
+            <h2 class="ctc-p"> <span >Email Us </span> </h2>
+            <p class="ctc-p"> greenplus@gmail.com</p>
+            <h2 class="ctc-p"> Visit Us</h2>
+            <p class="ctc-p"> No. 120 Behind Trade Fair Complex, <br>
+                Opp. National social insurance Trust Fund[NSITF], Kano.</p>
+
+        </div>
+        <div class="ctc">
+           <form action="">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email"> Your Email</label>
+            <input type="email" id="email" name="Email" placeholder="Your Email..">
+
+            <label for="subject">Subject</label>
+             <input type="text" placeholder="Subject">
+
+             <label for="message">Massage</label><br>
+             <textarea name="" id="" cols="60" rows="3" placeholder="write your message"></textarea>
+             <input type="submit" value="Submit">
+           </form>
+        </div>
+   
+
+    </section>
+    
+    <footer>
+        <p> All right reserved © 2023
+        </p>
+    </footer>
+    
+</body>
+</html>
